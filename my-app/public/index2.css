@@ -1,0 +1,77 @@
+body {
+    margin: none;
+    background-color: darkslategrey;
+  
+  }
+  header {
+    width: 100%;
+    height: 400px;
+    margin-top: 2.5%;
+    position:relative;
+    justify-content: center;
+    background-image: url('images/darkCloud.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 32px;
+    text-align: center;
+  }
+
+ 
+
+   #wrapper {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start; 
+  
+  } 
+
+  nav ul {
+    margin: none;
+    flex-basis: 10%;
+    width: 80%;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 0em;
+    line-height: 600%;
+  }
+  
+  nav li {
+    text-align: center;
+    background-color: lightgray;
+    padding: 0;
+    border: 5px solid black;
+    color: black;
+  }
+  
+  #image{
+     width: 100%;
+  }
+
+  .column {
+    float: left;
+  }
+
+  .left, .right {
+    flex-basis: auto;
+    width: 25%;
+  }
+
+  .middle {
+    width: 50%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  aside{
+      margin-top:6%;
+      border: 5px solid black;
+  }
