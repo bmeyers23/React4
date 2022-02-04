@@ -1,13 +1,404 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: none;
+  background-color: darkslategrey;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+header {
+  width: 99%;
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+  justify-content: center;
+  background-color: darkgrey;
+  font-size: 50px;
+  text-align: center;
+  border: 5px solid black;
 }
+
+nav ul {
+  flex-basis: 10%;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 4em;
+  line-height: 600%;
+}
+
+nav li {
+  text-align: center;
+  background-color: lightgray;
+  padding: 1em;
+  border: 5px solid black;
+  color: black;
+}
+
+.split { 
+  margin-top: 10%;
+  height: 80%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color: whitesmoke;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#wrapper {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+}
+
+#me {
+  width: 80%;
+}
+#dq{
+  width: 80%;
+  padding: 3%;
+  display: none;
+}
+#starbucks{
+   width: 80%;
+  padding: 3%;
+  display: none;
+  
+}
+#pics{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+aside {
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  font-size: 15px;
+  border: 10px outset grey;
+  padding-top: 1em;
+  margin-right: 1%;
+  align-items: center;
+  margin-right: 1%;
+  margin-left: 8%;
+  margin-top: 1.5%;
+
+}
+
+main {
+  background-color: slategray;
+  width: 40%;
+
+}
+
+#contact {
+  line-height: 5em;
+  font-size: 18px;
+
+}
+
+#abMe {
+  line-height: 400%;
+  margin-left: 1%;
+  font-size: 24px;
+  padding: 1em;
+  border: 5px double #8a0303;
+  border-radius: 10px;
+}
+
+.bold {
+
+  font-weight: bold;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  font-size: small;
+  font-style: italic;
+  justify-content: center;
+  padding: .5em;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%
+}
+
+.center {
+  text-align: center;
+}
+
+#heading1 {
+
+  background-color: black;
+  color: ghostwhite;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#jobs td {
+  line-height: 300%;
+  border: 1px double black;
+  background-color: blanchedalmond;
+  
+  
+}
+
+#jobs th {
+  border: 1px double black;
+  background-color: crimson;
+  text-align: center;
+}
+
+#jobs {
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 3%;
+}
+
+
+.drop {
+  display: none;
+}
+
+#edu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 400%;
+  list-style: none;
+  line-height: 400%;
+
+}
+
+#edu li {
+  background-color: darkblue;
+  padding: 5%;
+  list-style: none;
+}
+
+#edu a:link {
+  color: aliceblue;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+input {
+  width: 30%;
+}
+
+#changing{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: 300%;
+}
+#compHead{
+  display: flex;
+  justify-content: center;
+}
+#compImg{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#back{
+  margin-left: 3%;
+}
+#brain{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#gpa{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#honors{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#hsGPA{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#hs{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#hsH2{
+  text-align: center;
+}
+#jcuH2{
+  text-align: center;
+}
+#jcu{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#skills{
+  width: 80%;
+  font-size: 24px;
+  
+}
+
+
+
+#skillsLabel{
+  
+}
+#skillsDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+#personalSkills{
+  display: none;
+  width: 100%;
+}
+#professionalSkills{
+  display: none;
+  width: 100%;
+}
+#skillsLable{
+  font-size: 32px;
+  text-align: center;
+  padding: 3%;
+}
+.skillLI{
+  margin-left: 5%;
+  line-height: 300%;
+  font-size: 20px;
+}
+@keyframes personalSkillsImage {
+0% {
+  transform: scale(0.1);
+  opacity: 0;
+}
+70% {
+  transform: scale(1.5);
+  opacity: 1;
+}
+100% {
+  transform: scale(1);
+}
+}
+
+@keyframes professionalSkillsImage {
+0% {
+      margin-top: -1500px;
+      margin-right: -2500px;
+      transform: scale(.1);
+      opacity: 0;
+
+  }
+  
+  
+  100% {
+      margin-top: 0px;
+      margin-right:0px;
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+#personalSkillsImage{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  display: none;
+  
+  animation-name: personalSkillsImage;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+#professionalSkillsImage{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  display: none;
+  
+  animation-name: professionalSkillsImage;
+  animation-direction: alternate;
+  position: relative;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+#workCaption{
+   font-size: 32px;
+  padding: 3%;
+}
+#workTable{
+  padding:1%;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  aside{ display: none;}
+  nav{ 
+      
+      width:100%
+  }
+  nav ul{ 
+      display: flex;
+      flex-direction: row;
+      width:100%;
+  }
+  main{
+      width:100%;
+  }
+  wrapper{
+      display:flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      
+  }
+      }
